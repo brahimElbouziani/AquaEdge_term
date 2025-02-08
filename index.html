@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - AquaEdge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #2563eb, #4f46e5);
+            --text-color: #e2e8f0;
+            --bg-color: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.95);
+            --blur-effect: blur(10px);
+            --content-width: 65ch;
+        }
+
+        body {
+            background: var(--bg-color);
+            background-image: radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.05) 0%, transparent 100%);
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: min(90%, 800px);
+            margin: 2rem auto;
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            backdrop-filter: var(--blur-effect);
+            -webkit-backdrop-filter: var(--blur-effect);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        /* Typography improvements */
+        h2 {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            letter-spacing: -0.02em;
+        }
+
+        h3, h4 {
+            color: #fff;
+            font-weight: 500;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+        }
+
+        p {
+            font-size: 1rem;
+            max-width: var(--content-width);
+            margin: 0 auto 1.5rem;
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+
+        /* Button improvements */
+        .btn-group {
+            margin: 1rem 0 3rem;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn-outline-primary {
+            background: rgba(37, 99, 235, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-color);
+            padding: 0.7rem 2rem;
+            border-radius: 0.75rem;
+            transition: all 0.2s ease;
+            font-size: 0.95rem;
+        }
+
+        .btn-outline-primary:hover,
+        .btn-outline-primary.active {
+            background: var(--primary-gradient);
+            border-color: transparent;
+            color: white;
+            transform: translateY(-1px);
+        }
+
+        /* List improvements */
+        ul {
+            max-width: var(--content-width);
+            margin: 0 auto 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            opacity: 0.9;
+        }
+
+        /* Divider */
+        hr {
+            border: none;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 2.5rem 0;
+        }
+
+        /* Responsive improvements */
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+                padding: 1.5rem;
+                border-radius: 0;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            h3 {
+                font-size: 1.3rem;
+            }
+
+            h4 {
+                font-size: 1.1rem;
+            }
+
+            p, li {
+                font-size: 0.95rem;
+            }
+        }
+
+        /* RTL Support */
+        [dir="rtl"] {
+            text-align: right;
+        }
+
+        [dir="rtl"] ul {
+            padding-right: 1.5rem;
+            padding-left: 0;
+        }
+
+        /* Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-color);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Selection */
+        ::selection {
+            background: rgba(37, 99, 235, 0.2);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center">
+            <div class="btn-group" role="group" aria-label="Language selector">
+                <a href="?lang=en" class="btn btn-outline-primary">English</a>
+                <a href="?lang=fr" class="btn btn-outline-primary">Français</a>
+                <a href="?lang=ar" class="btn btn-outline-primary">العربية</a>
+            </div>
+        </div>
+        <h2 class="text-center">Terms of Use - AquaEdge</h2>
+        <hr>
+        <div id="policy-content"></div>
+    </div>
+
+    <script>
+        const policies = {
+            en: {
+                title: "Terms of Use - AquaEdge",
+                content: `
+                    <h3>Terms of Use - AquaEdge</h3>
+                    <p>By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app.</p>
+                    
+                    <h4>App Usage and Restrictions</h4>
+                    <p>You're not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You're not allowed to attempt to extract the source code of the app, and you also shouldn't try to translate the app into other languages, or make derivative versions. The app itself, and all the trade marks, copyright, database rights and other intellectual property rights related to it, still belong to AgriEdge.</p>
+                    
+                    <h4>Changes and Charges</h4>
+                    <p>AgriEdge is committed to ensuring that the app is as useful and efficient as possible. For that reason, we reserve the right to make changes to the app or to charge for its services, at any time and for any reason. We will never charge you for the app or its services without making it very clear to you exactly what you're paying for.</p>
+                    
+                    <h4>Data and Security</h4>
+                    <p>The AquaEdge app stores and processes personal data that you have provided to us, in order to provide my Service. It's your responsibility to keep your phone and access to the app secure. We therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to malware/viruses/malicious programs, compromise your phone's security features and it could mean that the AquaEdge app won't work properly or at all.</p>
+                    
+                    <h4>Limitations of Liability</h4>
+                    <p>You should be aware that there are certain things that AgriEdge will not take responsibility for. Certain functions of the app will require the app to have an active internet connection. The connection can be Wi-Fi, or provided by your mobile network provider, but AgriEdge cannot take responsibility for the app not working at full functionality if you don't have access to Wi-Fi, and you don't have any of your data allowance left.</p>
+                    
+                    <h4>Network Charges</h4>
+                    <p>If you're using the app outside of an area with Wi-Fi, you should remember that your terms of the agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the app, or other third party charges. In using the app, you're accepting responsibility for any such charges, including roaming data charges if you use the app outside of your home territory (i.e. region or country) without turning off data roaming.</p>
+                    
+                    <h4>Third Party Dependencies</h4>
+                    <p>With respect to AgriEdge responsibility for your use of the app, when you're using the app, it's important to bear in mind that although we endeavour to ensure that it is updated and correct at all times, we do rely on third parties to provide information to us so that we can make it available to you. AgriEdge accepts no liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the app.</p>
+                    
+                    <h4>Updates and Termination</h4>
+                    <p>At some point, we may wish to update the app. The app is currently available on Android – the requirements for system(and for any additional systems we decide to extend the availability of the app to) may change, and you'll need to download the updates if you want to keep using the app. AgriEdge does not promise that it will always update the app so that it is relevant to you and/or works with the Android version that you have installed on your device. However, you promise to always accept updates to the application when offered to you.</p>
+                    
+                    <p>We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if needed) delete it from your device.</p>
+                    
+                    <h4>Changes to Terms and Conditions</h4>
+                    <p>I may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Terms and Conditions on this page. These terms and conditions are effective as of 2021-02-09</p>
+                    
+                    <h4>Contact Us</h4>
+                    <p>If you have any questions or suggestions about my Terms and Conditions, do not hesitate to contact me at Contact@agriedge.ma</p>
+                `
+            },
+            fr: {
+                title: "Conditions d'utilisation - AquaEdge",
+                content: `
+                    <h3>Conditions d'utilisation - AquaEdge</h3>
+                    <p>En téléchargeant ou en utilisant l'application, ces conditions s'appliqueront automatiquement à vous – vous devez donc vous assurer de les lire attentivement avant d'utiliser l'application.</p>
+                    
+                    <h4>Utilisation de l'Application et Restrictions</h4>
+                    <p>Il vous est interdit de copier, modifier l'application, toute partie de l'application, ou nos marques déposées de quelque manière que ce soit. Il vous est interdit de tenter d'extraire le code source de l'application, et vous ne devez pas non plus essayer de traduire l'application dans d'autres langues, ou de créer des versions dérivées. L'application elle-même, ainsi que toutes les marques commerciales, droits d'auteur, droits sur les bases de données et autres droits de propriété intellectuelle associés, appartiennent toujours à AgriEdge.</p>
+                    
+                    <h4>Modifications et Frais</h4>
+                    <p>AgriEdge s'engage à garantir que l'application soit aussi utile et efficace que possible. Pour cette raison, nous nous réservons le droit d'apporter des modifications à l'application ou de facturer ses services, à tout moment et pour n'importe quelle raison. Nous ne vous facturerons jamais pour l'application ou ses services sans vous indiquer clairement ce que vous payez.</p>
+                    
+                    <h4>Données et Sécurité</h4>
+                    <p>L'application AquaEdge stocke et traite les données personnelles que vous nous avez fournies, afin de fournir mon service. Il est de votre responsabilité de sécuriser votre téléphone et l'accès à l'application. Nous vous recommandons donc de ne pas rooter ou déverrouiller votre téléphone, ce qui consiste à supprimer les restrictions logicielles imposées par le système d'exploitation officiel de votre appareil. Cela pourrait rendre votre téléphone vulnérable aux logiciels malveillants/virus/programmes malveillants, compromettre les fonctionnalités de sécurité de votre téléphone et cela pourrait signifier que l'application AquaEdge ne fonctionnera pas correctement ou pas du tout.</p>
+                    
+                    <h4>Limitations de Responsabilité</h4>
+                    <p>Vous devez être conscient qu'il y a certaines choses dont AgriEdge ne peut pas être responsable. Certaines fonctions de l'application nécessiteront que l'application dispose d'une connexion Internet active. La connexion peut être Wi-Fi, ou fournie par votre opérateur mobile, mais AgriEdge ne peut être tenu responsable du fait que l'application ne fonctionne pas pleinement si vous n'avez pas accès à Wi-Fi, et que vous n'avez plus de données mobiles disponibles.</p>
+                    
+                    <h4>Frais de Réseau</h4>
+                    <p>Si vous utilisez l'application en dehors d'une zone Wi-Fi, vous devez vous rappeler que les conditions de votre accord avec votre opérateur mobile s'appliquent toujours. En conséquence, vous pourriez être facturé par votre opérateur mobile pour le coût des données pendant la durée de la connexion à l'application, ou d'autres frais de tiers. En utilisant l'application, vous acceptez la responsabilité de tous ces frais, y compris les frais de données en itinérance si vous utilisez l'application en dehors de votre territoire d'origine (c'est-à-dire votre région ou pays) sans désactiver l'itinérance des données.</p>
+                    
+                    <h4>Dépendances Tierces</h4>
+                    <p>En ce qui concerne la responsabilité de AgriEdge quant à votre utilisation de l'application, il est important de garder à l'esprit que bien que nous nous efforcions de garantir que l'application soit à jour et correcte en tout temps, nous dépendons de tiers pour nous fournir des informations afin de vous les rendre disponibles. AgriEdge décline toute responsabilité pour toute perte, directe ou indirecte, que vous pourriez subir en vous basant uniquement sur cette fonctionnalité de l'application.</p>
+                    
+                    <h4>Mises à Jour et Résiliation</h4>
+                    <p>À un moment donné, nous pourrions vouloir mettre à jour l'application. L'application est actuellement disponible sur Android – les exigences pour le système (et pour tout autre système auquel nous pourrions décider d'étendre la disponibilité de l'application) peuvent changer, et vous devrez télécharger les mises à jour si vous souhaitez continuer à utiliser l'application. AgriEdge ne promet pas qu'elle mettra toujours à jour l'application pour qu'elle soit pertinente pour vous et/ou fonctionne avec la version d'Android que vous avez installée sur votre appareil. Cependant, vous vous engagez à accepter toutes les mises à jour de l'application qui vous seront proposées.</p>
+                    
+                    <p>Nous pourrions également décider de cesser de fournir l'application et de mettre fin à son utilisation à tout moment sans préavis. À moins que nous ne vous en informions autrement, en cas de résiliation, (a) les droits et licences qui vous sont accordés dans ces conditions prendront fin ; (b) vous devrez cesser d'utiliser l'application et (si nécessaire) la supprimer de votre appareil.</p>
+                    
+                    <h4>Modifications des Conditions Générales</h4>
+                    <p>Nous pourrions mettre à jour nos Conditions générales de temps à autre. Il vous est donc conseillé de consulter cette page périodiquement pour toute modification. Nous vous notifierons de tout changement en publiant les nouvelles Conditions générales sur cette page.</p>
+                    
+                    <h4>Contactez-nous</h4>
+                    <p>Si vous avez des questions ou des suggestions concernant nos Conditions générales, n'hésitez pas à nous contacter à l'adresse : 📧 Email : Contact@agriedge.ma</p>
+                `
+            },
+            ar: {
+                title: "شروط الاستخدام - AquaEdge",
+                content: `
+                    <h3>شروط استخدام تطبيق AquaEdge</h3>
+                    
+                    <p>عن طريق تنزيل أو استخدام التطبيق، ستنطبق عليك هذه الشروط تلقائيًا - لذا يجب عليك التأكد من قراءتها بعناية قبل استخدام التطبيق. يُحظر عليك نسخ أو تعديل التطبيق أو أي جزء من التطبيق أو علاماتنا التجارية بأي طريقة كانت. يُحظر عليك محاولة استخراج كود المصدر للتطبيق، ويجب عليك أيضًا عدم محاولة ترجمة التطبيق إلى لغات أخرى أو إنشاء نسخ مشتقة. يظل التطبيق نفسه، بالإضافة إلى جميع العلامات التجارية وحقوق الطبع والنشر وحقوق قواعد البيانات وحقوق الملكية الفكرية الأخرى المرتبطة به، ملكًا لشركة AgriEdge.</p>
+
+                    <h4>التغييرات والرسوم</h4>
+                    <p>تلتزم AgriEdge بضمان أن يكون التطبيق مفيدًا وفعالًا قدر الإمكان. لهذا السبب، نحتفظ بالحق في إجراء تغييرات على التطبيق أو فرض رسوم على خدماته في أي وقت ولأي سبب. لن نفرض عليك أي رسوم مقابل التطبيق أو خدماته دون إبلاغك بوضوح بما ستدفعه.</p>
+
+                    <h4>البيانات والأمان</h4>
+                    <p>يخزن تطبيق AquaEdge ويعالج البيانات الشخصية التي قدمتها لنا من أجل تقديم خدماتنا. تقع على عاتقك مسؤولية تأمين هاتفك والوصول إلى التطبيق. لذلك، نوصيك بعدم عمل "روت" أو فتح قفل جهازك، وهو العملية التي تتمثل في إزالة القيود البرمجية المفروضة من قبل نظام التشغيل الرسمي لجهازك. قد يؤدي ذلك إلى جعل جهازك عرضة للبرمجيات الضارة/الفيروسات/البرامج الخبيثة، مما يعرض ميزات الأمان الخاصة به للخطر وقد يعني أن تطبيق AquaEdge قد لا يعمل بشكل صحيح أو قد لا يعمل على الإطلاق.</p>
+
+                    <h4>حدود المسؤولية</h4>
+                    <p>يجب أن تكون على علم أنه توجد بعض الأمور التي لا تتحمل AgriEdge المسؤولية عنها. تتطلب بعض وظائف التطبيق أن يكون للتطبيق اتصال نشط بالإنترنت. يمكن أن يكون الاتصال عبر الواي فاي أو عبر مزود خدمة شبكة الهاتف المحمول الخاص بك، ولكن لا يمكن لـ AgriEdge أن تكون مسؤولة عن عدم عمل التطبيق بشكل كامل إذا لم يكن لديك اتصال بالواي فاي ولم يكن لديك أي بيانات متاحة.</p>
+
+                    <h4>رسوم الشبكة</h4>
+                    <p>إذا كنت تستخدم التطبيق خارج نطاق الواي فاي، يجب أن تتذكر أن شروط اتفاقك مع مزود خدمة شبكة الهاتف المحمول ستظل سارية. ونتيجة لذلك، قد يتم فرض رسوم عليك من قبل مزود الخدمة مقابل بيانات الاتصال خلال فترة استخدام التطبيق، أو أي رسوم أخرى من طرف ثالث. باستخدامك للتطبيق، فإنك تتحمل مسؤولية أي رسوم من هذا القبيل، بما في ذلك رسوم بيانات التجوال إذا استخدمت التطبيق خارج منطقتك الأصلية (أي منطقتك أو دولتك) دون إيقاف بيانات التجوال.</p>
+
+                    <h4>الاعتماد على الأطراف الثالثة</h4>
+                    <p>فيما يتعلق بمسؤولية AgriEdge عن استخدامك للتطبيق، من المهم أن تضع في اعتبارك أنه على الرغم من أننا نسعى جاهدين لضمان أن التطبيق محدث وصحيح في جميع الأوقات، فإننا نعتمد على أطراف ثالثة لتزويدنا بالمعلومات حتى نتمكن من تقديمها لك. لا تتحمل AgriEdge أي مسؤولية عن أي خسارة، سواء كانت مباشرة أو غير مباشرة، قد تتعرض لها نتيجة الاعتماد بالكامل على هذه الوظائف في التطبيق.</p>
+
+                    <h4>التحديثات وإنهاء الخدمة</h4>
+                    <p>في أي وقت، قد نرغب في تحديث التطبيق. التطبيق متاح حاليًا على نظام أندرويد – قد تتغير متطلبات النظام (وأي أنظمة إضافية قد نقرر توسيع التوافر عليها) ويجب عليك تنزيل التحديثات إذا كنت ترغب في الاستمرار في استخدام التطبيق. لا تَعِد AgriEdge بأنها ستقوم دائمًا بتحديث التطبيق ليظل ذا صلة بك و/أو يعمل مع النسخة التي لديك من أندرويد على جهازك. ومع ذلك، فإنك توافق على قبول جميع التحديثات للتطبيق التي سيتم تقديمها لك.</p>
+
+                    <p>قد نقرر أيضًا التوقف عن تقديم التطبيق وإنهاء استخدامه في أي وقت دون إشعار مسبق. ما لم نبلغك بخلاف ذلك، في حالة الإنهاء، (أ) ستنتهي الحقوق والتراخيص التي مُنحت لك بموجب هذه الشروط؛ (ب) يجب عليك التوقف عن استخدام التطبيق، وإذا لزم الأمر، حذفه من جهازك.</p>
+
+                    <h4>التغييرات في الشروط والأحكام</h4>
+                    <p>قد نقوم بتحديث شروطنا وأحكامنا من وقت لآخر. لذلك، يُنصح بمراجعة هذه الصفحة بشكل دوري للتعرف على أي تغييرات. سنخطرك بأي تغييرات من خلال نشر الشروط والأحكام الجديدة على هذه الصفحة.</p>
+
+                    <h4>اتصل بنا</h4>
+                    <p>إذا كانت لديك أي أسئلة أو اقتراحات حول شروطنا وأحكامنا، فلا تتردد في الاتصال بنا على: 📧 البريد الإلكتروني: Contact@agriedge.ma</p>
+                `
+            }
+        };
+
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        const lang = getQueryParam('lang') || 'en';
+        
+        // Set RTL direction for Arabic
+        if (lang === 'ar') {
+            document.body.setAttribute('dir', 'rtl');
+            document.querySelector('.container').style.textAlign = 'right';
+        } else {
+            document.body.setAttribute('dir', 'ltr');
+            document.querySelector('.container').style.textAlign = 'left';
+        }
+
+        // Update title and content
+        document.querySelector('h2').textContent = policies[lang].title;
+        document.getElementById('policy-content').innerHTML = policies[lang].content;
+        
+        // Highlight current language button
+        document.querySelector(`a[href="?lang=${lang}"]`)?.classList.add('active');
+
+        // Create floating particles
+        function createParticles() {
+            const particlesContainer = document.createElement('div');
+            particlesContainer.className = 'particles';
+            document.body.appendChild(particlesContainer);
+
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + 'vw';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Initialize particles
+        createParticles();
+    </script>
+</body>
+</html>
